@@ -38,6 +38,10 @@ h1 {
 	border-bottom: 1px solid grey;
 }
 
+h2 {
+	font-size: 1.8em;
+}
+
 img {
 	width: 100%;
 }
@@ -49,4 +53,15 @@ img {
 figure {
 	margin: 0;
 	text-align: center;
+}
+
+.answer {
+	opacity: 50%;
+	padding: .1em .5em;
+	background-color: #e7f5fa;
+	border-radius: .6em;
+}
+
+.answer:hover {
+	opacity: inherit;
 }
