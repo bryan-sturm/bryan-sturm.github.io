@@ -5,33 +5,42 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Lines and Edges</title>
+
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="../../global.css">
 	<link rel="stylesheet" href="style.css">
+
+	<!-- Open Graph -->
+	<meta property="og:image" content="banner.jpg">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Lines and Edges">
+	<meta property="og:description"
+		content="In an era dominated by drawings that juggle both lines and colors in a single composition, understanding the difference between a line and an edge is key to creating vibrant illustrations.">
 </head>
 
 <body>
+	<div class="centered">
 
-	<nav>
-		<ul>
-			<li>
-				<a href="/index.html">Bryan Sturm</a> &gt; <a href="../index.html">Articles</a> &gt; <a href="index.html">Lines
-					and Edges</a>
-			</li>
-		</ul>
-	</nav>
+		<nav>
+			<a href="/index.html">Bryan Sturm</a> &gt; <a href="../index.html">Articles</a> &gt; <a href="index.html">Lines
+				and Edges</a>
+		</nav>
 
-	<div class="main-content">
+		<img src="banner.jpg" class="banner-image">
+		<p class="banner-dingbat">✽ ✽ ✽</p>
+
 		<article>
 			<h1>Lines and Edges</h1>
-
-			<p><img src="banner.jpg"></p>
 
 			<p>
 				For anyone else out there struggling with anime-style art, this is what helped me.
 			</p>
 			<p>
-				Most anime "line drawings" are not actually line drawings. What you're actually looking at are the boundaries of
-				color shapes on the canvas.
+				Most anime "line drawings" are not actually line drawings. They are actually the boundaries of color shapes on
+				the canvas.
 			</p>
 			<p>
 				The easiest way to explain this is by drawing a distinction between <em>lines</em> and <em>edges</em>.
@@ -40,36 +49,78 @@
 				Conceptually, a <dfn>line</dfn> is a standalone graphic element. It has properties such as weight, direction,
 				rhythm, and energy. Careful arrangement of lines yields a finished illustration.
 			</p>
+			<img src="lines.jpg" alt="Figure showing properties of lines." title="Different properties of lines.">
 			<p>
 				On the other hand, an <dfn>edge</dfn> represents the boundary between two different shapes. This leads to some
 				interesting characteristics. For one, the only property edges have is hardness. When two shapes immediately
-				transition, the edge is hard. When two gradients gradually mix together, the edge is soft. Likewise, edges can
-				only exist in the presence of shapes. That's because edges are a property of shapes. If you delete the shape,
-				the edge disappears with it.
+				transition, the edge is hard. When two gradients gradually mix together, the edge is soft.
 			</p>
+			<img src="edges.jpg" alt="Figure comparing hard and soft edges." title="Hard versus soft edges.">
+			<p>
+				Likewise, edges can only exist in the presence of shapes. That's because edges are a property of shapes. If you
+				delete the shape, the edge disappears with it.
+			</p>
+			<img src="edges2.jpg" alt="Figure showing relationship of edges to shapes."
+				title="Edges are a property of shapes.">
 			<p>
 				Where this distinction becomes muddled is once these two concepts hit the canvas. Usually, lines and edges are
 				drawn using the same technique: a thin contrasting line. This unfortunate coincidence can make it difficult for
 				an untrained eye to tell the difference.
 			</p>
+			<img src="muddle.jpg" alt="An annotated illustration identifying edges versus lines"
+				title="Examples of lines versus edges.">
+			<p>
+				One easy way to determine whether something is a line or an edge is to ask yourself the question: <q>Could I
+					change the width of this line without losing any information?</q>
+			</p>
+			<p>
+				Edges are the boundaries between shapes. No matter how wide the mark used to represent them is, we are still
+				showing the same information. Lines are different. If we change the width of the line, we change its inherent
+				properties.
+			</p>
+
+			<h2>Sketching with Edges</h2>
+
 			<p>
 				This brings us back to anime-style line art.
 			</p>
 			<p>
 				The first consequence of our understanding is this:
-			</p>
-			<p class="key-quote">
-				An anime-style sketch uses no <em>lines</em>, only <em>edges</em>.
+				<br>
 			</p>
 			<p>
-				It is nearly impossible to achieve the same level of precision by approaching the subject with the intent to
-				draw lines. Your sense of intuition crumbles once your line width drops beneath a certain threshold. And without
-				your intuition, it is impossible to draw convincingly at all.
+				<strong>An anime-style sketch uses no <em>lines</em>, only <em>edges</em>.</strong>
 			</p>
 			<p>
-				The only way to surpass this limit is to tap into the brain's understanding of edges. Our feel for the
+				Here is an example of the difference between a drawing made with lines and a drawing made with edges.
+			</p>
+			<img src="sketch.jpg" alt="Lines vs edges.">
+			<p>
+				There are a couple things to take notice of here.
+			</p>
+			<p>
+				The first observation is that many of the details inside the subject have been eliminated. For example, the
+				quick repeating lines suggesting the curvature of the body have been omitted. These marks were not not necessary
+				to illustrate the boundary between two shapes, so we left them out.
+			</p>
+			<p>
+				The second observation is the mark width. Notice how the edge drawing uses marks that are an order of magnitude
+				thinner than the line drawing.
+			</p>
+			<p>
+				This is where theory turns into practice.
+			</p>
+			<p>
+				It is nearly impossible to achieve this level of precision by approaching the subject with the intent to draw
+				lines. Our sense of intuition crumbles once our mark width drops beneath a certain threshold. And without our
+				intuition, it is impossible to draw convincingly at all.
+			</p>
+			<p>
+				The only way to surpass this limit is to tap into the brain's understanding of edges. Our intuition for the
 				boundaries between shapes far exceeds our feel for form and rhythm.
 			</p>
+
+			<h2>Painting with Edges</h2>
 			<p>
 				The second consequence of our understanding is this:
 			</p>
@@ -99,7 +150,7 @@
 			</figure>
 		</article>
 
-		<div>
+		<div id="task-section">
 			<h2 id="tasks">Tasks (Under Construction)</h2>
 
 			<section>
@@ -150,7 +201,7 @@
 
 		</div> <!-- End Tasks -->
 
-	</div> <!-- End Main Content -->
+	</div> <!-- End .centered -->
 
 </body>
 
