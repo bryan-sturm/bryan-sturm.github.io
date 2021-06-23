@@ -34,7 +34,24 @@ article {
 	line-height: 1.5;
 }
 
-h1, h2 {
+h1 {
+	font-size: 2.5em;
+	margin-bottom: 0em;
+	padding-bottom: 0;
+}
+
+.author-wrapper {
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.author-wrapper p {
+	margin: 0;
+	font-style: italic;
+	color: #9e9e9e;
+}
+
+h2 {
 	font-size: 2em;
 	margin-bottom: 0.2em;
 }
@@ -48,6 +65,10 @@ img {
 figure {
 	margin: 0;
 	text-align: center;
+}
+
+.end-mark {
+	text-align: right;
 }
 
 /* ----- Tasks ----- */
