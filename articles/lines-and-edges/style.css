@@ -52,7 +52,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2em;
+	font-size: 1.8em;
 	margin-bottom: 0.2em;
 }
 
@@ -68,7 +68,8 @@ figure {
 }
 
 .end-mark {
-	text-align: right;
+	text-align: center;
+	font-size: 1.3em;
 }
 
 /* ----- Tasks ----- */
