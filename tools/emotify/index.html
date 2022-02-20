@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Emotify</title>
+	<script src="main.js" type="module"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="content">
+
+		<nav>
+			<a href="/index.html">Bryan Sturm</a> &gt; <a href="../index.html">Tools</a> &gt; <a href="index.html">Emotify</a>
+		</nav>
+
+		<header>
+			<h1>How Do I Emote?</h1>
+			<p>Ever wondered how to write a message using only Discord react emojis?<br>Look no further.</p>
+		</header>
+
+		<form id="input-form">
+			<input type="text" id="input-text" placeholder="Text to convert to emotes" autocomplete="off" value="livid kid">
+
+			<br>
+
+			<label>
+				<input type="checkbox" id="input-cb-compound" value="compound" checked>
+				Allow Emojis Representing Multiple Characters
+			</label>
+
+			<div hidden>
+				<br>
+				<label>
+					<input type="checkbox" id="input-cb-leet" value="leet">
+					Allow "l33t" Replacements
+				</label>
+			</div>
+
+			<br>
+
+			<input type="submit" value="Emotify!">
+		</form>
+
+		<div id="output-wrapper" hidden>
+			<div>
+				<h2>Output</h2>
+				<p>Click a letter to copy it to the clipboard.</p>
+				<button id="output-copyall">Copy All</button>
+				<p id="output-text"></p>
+				<p id="output-missing"></p>
+				<div hidden>
+					<h2>Symbol Usage</h2>
+					<table>
+						<tr>
+							<td>A</td>
+							<td>B</td>
+						</tr>
+						<tr>
+							<td>C</td>
+							<td>D</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div id="section-additional-notes">
+			<h2>Additional Notes</h2>
+			<ul>
+				<li>
+					This tools is in early alpha and contains subtle bugs.
+				</li>
+				<li>
+					Blue box = successful translation.
+				</li>
+				<li>
+					Red box = ran out of emojis for this character.
+				</li>
+				<li>
+					Click on box = copy emoji value to clipboard.
+				</li>
+				<li>
+					There are no current plans for further development.
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</body>
+
+</html>

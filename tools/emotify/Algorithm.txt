@@ -1,0 +1,74 @@
+Reservations
+	Reserve(start, option)
+		Assigns an exclusive owner to a span of text.
+
+	Free(start)
+		Removes an assignment starting at the given index.
+	
+	MatchAll(Option) -> Array<Integer>
+		Searchs for all valid places to match the given option.
+
+	GetCoverage() -> Integer
+		Returns the number of assigned characters.
+	
+	IsFullyMapped() -> Boolean
+		Returns true if every character has an owner.
+	
+	ToArray() -> Array<(String, Option)>
+		Outputs a sequence of each piece of text and its owner.
+
+
+Option
+	Text
+		String to match option with.
+
+	Cost
+		Cost to use the option.
+
+	Length
+		Number of characters this option covers.
+
+	...
+	Interface to match against SourceText.
+
+
+OptionList
+	TakeNext() -> Option
+		Pops the next most expensive Option.
+
+	Clone() -> ReservationTracker
+		Creates a shallow copy, reusing underlying Option objects.
+	
+	IsEmpty() -> Boolean
+		Returns true if there are no remaining options.
+
+
+FindBestFit(sourceText, optionList)
+	let reservations = new Reservations(sourceText)
+	let bestCost = +Infinity
+	let bestCoverage = 0
+	let bestMapping = null
+
+	Match(availableOptions, curCost)
+		// Check if we have found a new best solution.
+		let curCover = reservations.GetCoverage() 
+		if curCover > bestCoverage || (curCover == bestCoverage && curCost < bestCost)
+			bestCost = curCost
+			bestCoverage = curCover
+			bestMapping = reservations.Export()
+		
+		// Base cases.
+		if availableOptions.IsEmpty() || reservations.IsFullyMapped()
+			return
+		
+		// Check futures that involve taking this current option.
+		let curOption = availableOptions.TakeNext()
+		for index in Reservations.MatchAll(curOption)
+			reservations.Reserve(index, curOption)
+			Match(availableOptions.Clone(), curCost + curOption.Cost)
+			reservations.Free(index)
+		Match(availableOptions.Clone(), curCost)
+
+	Match(optionList, 0)
+
+	return bestMapping
